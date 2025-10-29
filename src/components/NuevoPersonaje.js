@@ -41,7 +41,7 @@ export default class NuevoPersonaje extends Component {
   render() {
     return (
       <div>
-        {this.state.status && <Navigate to={"/"}/>}
+        {this.state.status && <Navigate to={"/personajes/" + this.cajaserie.current.value}/>}
         <h1 className='text-primary'>Nuevo personaje</h1>
         <form onSubmit={this.createPersonaje}>
             <label>Nombre:</label><br/>
