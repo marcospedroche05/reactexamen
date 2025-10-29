@@ -46,7 +46,7 @@ export default class ModificarPersonaje extends Component {
     render() {
         return (
             <div className='p-2'>
-                {this.state.status && <Navigate to={"/"}/>}
+                {this.state.status && <Navigate to={`/personajes/${this.cajaSeries.current.value}`}/>}
                 <h1>Modificar personaje</h1>
                 <hr className='text-primary' />
                 <form onSubmit={this.modificarPersonaje}>
